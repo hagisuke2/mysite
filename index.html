@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>position問題</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="text">
+    <h1>テーブル練習</h1>
+    <h2>プログラミング言語</h2> 
+  </div>
+<table class="list">
+  <tr>
+    <th class="ja">ジャンル</th>
+    <th class="la">言語名</th>
+  </tr>
+  <tr>
+    <td rowspan="3">フロントエンド</td><td>HTML</td>
+  </tr>
+  <tr>
+    <td>css</td>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+  </tr>
+  <tr>
+    <td rowspan="3">バックエンド</td>
+    <td>PHP</td>
+  </tr>
+  <tr>
+    <td>Ruby</td>
+  </tr>
+  <tr>
+    <td>Phyton</td>
+  </tr>
+</table>
+<div class="text">
+  <h1>フォーム練習</h1>
+  <h2>お問い合わせ</h2>
+</div>
+<table class="list">
+  <form method="POST" action="#">
+  <tr>
+    <th class="name"><label>お名前</label></th>
+    <td class="input"><input class="area" type="text"></td>
+  </tr>
+  <tr>
+    <th><label>ご住所</label></th>
+    <td><input class="area" type="text"></td>
+  </tr>
+  <tr>
+    <th><label>性別</label></th>
+    <td>
+      <input type="radio" name="gender" value="male" checked>男性
+      <input type="radio" name="gender" value="female">女性
+    </td>
+  </tr>
+  <tr>
+    <th><label>お問い合わせ種別</label></th>
+    <td>
+      <select name="val">
+        <option value="a">資料請求</option>
+        <option value="b">なし</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th><label>ご希望の連絡方法<br>（複数選択可）</label></th>
+    <td>
+      <input type="checkbox" name="conecto" value="mail">メール
+      <input type="checkbox" name="conecto" value="call">電話
+      <input type="checkbox" name="conecto" value="visit">訪問
+    </td>
+  </tr>
+  <tr>
+    <th><label class="o">お問い合わせ内容</label></th>
+    <td><textarea name="name" id="#" cols="30" rows="10"></textarea></td>
+  </tr>
+</form>
+</table>
+<div class="btn">
+<input type="submit" value="送信">
+</div>
+  </div>
+</body>
+</html>
